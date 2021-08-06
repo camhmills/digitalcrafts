@@ -43,7 +43,7 @@ while user_input != "q":
             del(taskdict["Medium"][remove_task2])
         if "low" in remove_task:
             print(taskdict["Low"])
-            for i in range(len(taskdict["Medium"])):
+            for i in range(len(taskdict["Low"])):
                 print(i, end = " ")
             remove_task2 = int(input("\nWhat task would you like to remove? "))
             del(taskdict["Low"][remove_task2])
@@ -59,4 +59,4 @@ while user_input != "q":
     #quitting
     if user_input == "q":
         print("Thank you for accessing your to-do list.")
-        break
+        quit
