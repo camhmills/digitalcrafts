@@ -1,14 +1,19 @@
 
-myDict = []
+myList = []
 class Grocery_List:
     def __init__(self, store):
         self.store = store
-    def __eq__(self, another):
-        return hasattr(another, 'store') and self.store == another.store
-    def __hash__(self):
-        return hash(self.store)
+        self.items = []
+
+    def info(self, title, price, quantity):
+        self.title = title
+        self.price = price
+        self.quantity = quantity
+
     def __repr__(self):
         return ("%s" % self.store)
+
+
 def welcomeMessage():
     message = """
     Welcome to your shopping list directory.
@@ -24,16 +29,18 @@ def makingAList():
     userInput = input("What do you want to call your new list? ")
     listInput = Grocery_List(userInput)
     listToAdd.append(listInput)
-    addAnItem = input("What item do you want to add? ")
-    listToAdd.append(addAnItem)
-    myDict.append(listToAdd)
+    myList.append(listToAdd)
 
 def addItemtoList():
-    for store in myDict:
+    for store in myList:
         print(store)
-    userInput = int(input("What list do you want to add to? "))
-    itemToAdd = input("What do you want to add? ")
-    myDict[userInput].append(itemToAdd)
+    itemName = input("What do you want to add?")
+    itemQuantity = input("What is the quantity? ")
+    itemPrice = input("What is the price? ")
+    userInput = int(input("What list do you want to add to? Assign using index. ")) + 1
+    itemToAdd = {"title" : itemName, "quantity" : itemQuantity, "price" : itemPrice}
+    myList[userInput - 1].append(itemToAdd)
+    return itemToAdd
 
 
 choice = ""
@@ -45,10 +52,10 @@ while(choice != "q"):
     if userChoice == "2":
         addItemtoList()
     if userChoice == "3":
-        for store in myDict:
+        for store in myList:
             print(store)
     if userChoice == "q":
         print("Thanks for accessing your lists.")
         break
 
-print(myDict)
+print(myList)
