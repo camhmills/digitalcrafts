@@ -5,11 +5,6 @@ class Grocery_List:
         self.store = store
         self.items = []
 
-    def info(self, title, price, quantity):
-        self.title = title
-        self.price = price
-        self.quantity = quantity
-
     def __repr__(self):
         return ("%s" % self.store)
 
@@ -37,10 +32,9 @@ def addItemtoList():
     itemName = input("What do you want to add?")
     itemQuantity = input("What is the quantity? ")
     itemPrice = input("What is the price? ")
-    userInput = int(input("What list do you want to add to? Assign using index. ")) + 1
+    userInput = int(input("What list do you want to add to? Assign using index. ")) - 1
     itemToAdd = {"title" : itemName, "quantity" : itemQuantity, "price" : itemPrice}
-    myList[userInput - 1].append(itemToAdd)
-    return itemToAdd
+    myList[userInput].append(itemToAdd)
 
 
 choice = ""
@@ -53,7 +47,8 @@ while(choice != "q"):
         addItemtoList()
     if userChoice == "3":
         for store in myList:
-            print(store)
+            for item in store:
+                print(item)
     if userChoice == "q":
         print("Thanks for accessing your lists.")
         break
