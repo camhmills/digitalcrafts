@@ -1,5 +1,5 @@
+
 import random
-import pygame
 from characterclass import Character
 
 # Start menu
@@ -8,12 +8,13 @@ def startMenu():
     Welcome to Simple Dungeon Crawl!
     1. Make a character
     2. Play
+    3. View Character
     3. Quit
     """)
     return print(menuMessage)
 
 # stock evil
-evil = Character("Evil", 25, 8, 10)
+evil = Character("Evil", 25, 8, 10, 0)
 
 # character creator
 def makeaChar():
@@ -23,15 +24,21 @@ def makeaChar():
         charCon = random.randint(5, 20)
         charStam = random.randint(25, 75)
         charStr = random.randint(5, 20)
+        charMoney = 0
     else:
         charCon = 12
         charStam = 35
         charStr = 12
-    hero = Character(charName, charStam, charCon, charStr)
+        charMoney = 0
+    hero = Character(charName, charStam, charCon, charStr, charMoney)
     print("Here's your character's stats:\n")
-    print("%s \nStamina %s \nConstitution %s \nStrength %s " % (charName, charStam, charCon, charStr))
+    print("%s \nStamina %s \nConstitution %s \nStrength %s \nMoney %s" % (charName, charStam, charCon, charStr, charMoney))
     return hero
 
+def viewStats(hero):
+    print("Here's your character's stats:\n")
+    print("%s \nStamina %s \nConstitution %s \nStrength %s \nMoney %s" % (hero.name, hero.stamina, hero.constitution, hero.strength, hero.money))
+    
 
 # play menu
 def actionMenu():
@@ -65,6 +72,7 @@ def playFunc(hero):
             break
         if evil.stamina <= 0:
             print("You killed the goblin!")
+            hero.addMoney()
             break
         if hero.stamina <= 0:
             print("You died!")
@@ -79,5 +87,7 @@ while True:
         hero = makeaChar()
     if userInput == "2":
         playFunc(hero)
+    if userInput == "3":
+        viewStats(hero)
     if userInput == "q":
         break
