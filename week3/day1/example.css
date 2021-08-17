@@ -1,0 +1,31 @@
+.mainpageHeader {
+    position: fixed;
+    left: 40%
+}
+
+.bassimg {
+    width: 200px;
+    margin-left: 45px;
+}
+
+.mandoimg {
+    width: 400px;
+}
+
+.banjoimg {
+    width: 400px;
+}
+
+.dobroimg {
+    width: 400px;
+}
+
+.fiddleimg {
+    width: 400px;
+}
+
+.welcometext {
+    position: fixed;
+    left: 43%;
+}
+
