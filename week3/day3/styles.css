@@ -1,0 +1,23 @@
+body {
+    background-color: #443f3f
+}
+
+img {
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+    padding: 10px;
+}
+
+.pix{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin: 10px 10px;
+    grid-gap: 15px;
+    /* place-items: center; */
+
+}
+
+
+
