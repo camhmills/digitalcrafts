@@ -1,0 +1,71 @@
+body {
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(52,52,175,1) 0%, rgba(0,212,255,1) 100%);
+color: antiquewhite;
+font-family: Arial;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+.submission {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+#submission {    
+    outline: 0;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+
+.button {
+    width: 100px;
+    height: 25px;
+    background: rgb(197, 6, 6);
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+}
+
+.mainWeather{
+    border: solid 1px white;
+    border-radius: 15px;
+    background-color: #1A1D21;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 12.5vw 12.5vw;
+    height: 45vh;
+    width: 25vw;
+    max-width: 500px;
+    min-width: 250px;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.areaName {
+    font-size:25px;
+    font-weight: bold;
+}
+
+.currentWeather {
+    font-size:50px;
+}
+
+.skyStatus {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
