@@ -17,6 +17,7 @@ img {
         grid-template-rows: auto;
         margin: 10px 10px;
         grid-gap: 15px;
+        justify-content: center;
     
     }
 }
@@ -28,6 +29,7 @@ img {
         grid-template-rows: auto;
         margin: 10px 10px;
         grid-gap: 15px;
+        justify-content: center;
     
     }
 }
@@ -39,6 +41,6 @@ img {
         grid-template-rows: auto;
         margin: 10px 10px;
         grid-gap: 15px;
-    
+        justify-content: center;
     }
 }

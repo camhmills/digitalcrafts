@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = "background-color:grey">
+    <input class = "idBox" type ="text" onfocus = "this.value = ''" placeholder="Enter an ID">
+    <input class = "taskBox" type ="text" onfocus = "this.value = ''" placeholder="Enter a task">
+    <button class = "addButton-1">Add Task</button>
+    <button class = "deleteButton">Delete Task</button>
+    <button class = "updateButton">Update Task</button>
+    <div>${todoitem.map(todoitem => `<h1>${todoitem.id}. ${todoitem.todoitem}</h1>`).join('')}</div>
+
+</body>
+<script src = "../js/sendUser.js"></script>
+</html>

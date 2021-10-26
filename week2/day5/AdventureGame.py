@@ -9,7 +9,7 @@ def startMenu():
     1. Make a character
     2. Play
     3. View Character
-    3. Quit
+    4. Quit
     """)
     return print(menuMessage)
 

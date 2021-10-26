@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #575757
+}
+
+input {
+    text-align: center;
+}
+
+.App {
+    display: flex;
+    flex-direction: row;
+}
+
+.signup {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    height: 400px;
+    width: 30vw;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.users {
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+    margin: 5px;
+    text-align: center;
+    background-color: #FFFFFF
+}

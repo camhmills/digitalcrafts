@@ -19,6 +19,11 @@ app.use(express.json());
 
 const PORT = 3001;
 
+const es6Render = require("express-es6-template-engine");
+app.engine("html", es6Render);
+app.set("views", "templates");
+app.set("view engine", "html");
+
 //add stocks
 app.post("/createStock", async (req, res) => {
     console.log(req.body);
@@ -45,6 +50,11 @@ app.get("/viewStocks", async (req, res) => {
     const { data, error } = await supabase.from("stocks")
     .select();
     res.send(data);
+    res.render("index", { 
+        locals: {
+            data: data
+        }
+    });
 });
 
 //update individual stock

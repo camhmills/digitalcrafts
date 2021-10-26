@@ -1,0 +1,8 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    justify-content: center;
+    height: 960px;
+    width: 720px;
+}

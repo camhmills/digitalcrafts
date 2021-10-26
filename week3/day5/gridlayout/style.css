@@ -1,0 +1,51 @@
+body{
+    color: white;
+}
+
+.box1 {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+    border: 1px solid #000000;
+    grid-gap: 10px;
+}
+
+.lowerBoxes {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box2 {
+    height: 60vh;
+    width: 25vw;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+.rightgroup {
+    display: grid;
+    width: 72.65vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 10px;
+
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
+    background-color: darkblue;
+}
+
+.box4 {
+    grid-column: span 2;
+}
+
+.box5 {
+    grid-column: span 2;
+}
+
+.box10{
+    grid-column: span 3;
+}

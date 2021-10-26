@@ -1,0 +1,110 @@
+body{
+    background-color: #141414;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5vh;
+    align-items: center;
+    font-family: Arial;
+    color:white;
+    background-color: black;
+    font-size: 14px;
+}
+
+#buttoncluster{
+    padding-bottom: 15px;
+}
+
+#joinbutton{
+    background-color: #DF2011;
+    border: none;
+    width: 26%;
+    height: 30px;
+    color: white;
+    border-radius: 2px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#signinbutton{
+    width: 15%;
+    height: 30px;
+    background-color:black;
+    border: 1px solid white;
+    border-radius: 2px;
+    color: white;
+    font-size: 12px;
+}
+
+#smallLogo{
+    background-color: #141414;
+    position: relative;
+
+}
+
+#buttoncluster {
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.movieHeader {
+    color: white;
+    font-size: 40px;
+    margin-top: 75px;
+    padding-left: 7px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.movieTag {
+    width: 22vw;
+    color: white;
+    font-size: 15px;
+    margin-top: 25px;
+    padding-left: 9px;
+    font-family: Arial;
+}
+
+.row1tag {
+    width: 22vw;
+    color: white;
+    font-size: 18px;
+    margin-top: 25px;
+    padding-left: 9px;
+    font-family: Arial;
+}
+
+.row1, .row2, .row3{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 25px;
+    justify-content: center;
+    grid-gap: 15px;
+    padding-left: 9px;
+}
+
+#movietile {
+    width: 100%;
+    height: 212px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#movietile:hover {
+    transform: scale(1.05)
+}
+
+.row2tag, .row3tag {
+    width: 22vw;
+    color: white;
+    font-size: 18px;
+    margin-top: 85px;
+    padding-left: 9px;
+    font-family: Arial;
+}

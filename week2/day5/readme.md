@@ -1,0 +1,1 @@
+This is my first simple game I've made on Python. I'm not really sure what else to put in the readme. Thanks for playing!

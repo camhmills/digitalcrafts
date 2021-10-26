@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+}
+
+img {
+    width: 500px;
+    height: 300px;
+}
