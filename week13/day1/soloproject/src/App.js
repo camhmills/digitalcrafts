@@ -1,15 +1,23 @@
 import './App.css';
-import { useState } from 'react'
+import { useState } from 'react';
+import { useSelector } from 'react-redux';
+
 import Dashboard from './components/Dashboard';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-import { MainContainer, SubContainer } from './styled-components/MainContainerStyle';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Home from './components/Home';
 import Wishlist from './components/Wishlist';
 
+import { MainContainer, SubContainer } from './styled-components/MainContainerStyle';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+
+
 function App() {
+  const toolData = useSelector(state => state.HomeReducer)
+  const wishList = useSelector(state => state.WishList)
   const [viewsideBar, setviewsideBar] = useState(true)
+  
+  console.log(toolData)
   return (
     <Router>
       <Switch>
@@ -21,10 +29,10 @@ function App() {
               <Dashboard/>
             </Route>
             <Route exact path = "/home">
-              <Home/>
+              <Home toolData = {toolData} />
             </Route>
             <Route exact path = "/wishlist">
-              <Wishlist/>
+              <Wishlist wishList = {wishList} />
             </Route>  
             </SubContainer>
         </MainContainer>
