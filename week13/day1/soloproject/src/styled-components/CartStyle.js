@@ -8,3 +8,8 @@ background-color: #e7eaf6;
 text-align: center;
 overflow-y: scroll;
 `
+
+export const CartTotal = styled.div`
+display: flex;
+justify-content: center;
+`

@@ -15,4 +15,5 @@ export const TitleDiv = styled.div`
 grid-column: 1/3;
 text-align: center;
 height: 71px;
+font-family: "Sweater-Stitch"
 `

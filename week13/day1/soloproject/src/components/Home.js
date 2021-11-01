@@ -19,10 +19,11 @@ export default function Home(props) {
                 return (
                     <Card>
                         <img src = {tool.img}/>
+                        <p>{tool.name}</p>
                         <h4>${tool.price}.00</h4>
                         <CardButtonDiv>
-                        <Cardbutton onClick={() => dispatch({type: "ADD_TO_CART", payload: {type:tool.type, price: tool.price, img: tool.img}})}>Add to Cart</Cardbutton>
-                        <Cardbutton onClick={() => dispatch({type: "PUT_WISHLIST", payload: {type:tool.type, price: tool.price, img: tool.img}})}>Add to Wishlist</Cardbutton>  
+                        <Cardbutton onClick={() => dispatch({type: "ADD_TO_CART", payload: {name: tool.name, type:tool.type, price: tool.price, img: tool.img}})}>Add to Cart</Cardbutton>
+                        <Cardbutton onClick={() => dispatch({type: "PUT_WISHLIST", payload: {name: tool.name, type:tool.type, price: tool.price, img: tool.img}})}>Add to Wishlist</Cardbutton>  
                         </CardButtonDiv>
                     </Card>
                     )
@@ -39,8 +40,8 @@ export default function Home(props) {
                         <img src = {tool.img}/>
                         <h4>${tool.price}.00</h4>
                         <CardButtonDiv>
-                        <Cardbutton>Add to Cart</Cardbutton>
-                        <Cardbutton onClick={() => dispatch({type: "PUT_WISHLIST", payload: {type:tool.type, price: tool.price, img: tool.img}})}>Add to Wishlist</Cardbutton>  
+                        <Cardbutton onClick={() => dispatch({type: "ADD_TO_CART", payload: {name: tool.name, type:tool.type, price: tool.price, img: tool.img}})}>Add to Cart</Cardbutton>
+                        <Cardbutton onClick={() => dispatch({type: "PUT_WISHLIST", payload: {name: tool.name, type:tool.type, price: tool.price, img: tool.img}})}>Add to Wishlist</Cardbutton>  
                         </CardButtonDiv>
                     </Card>
                     )
@@ -57,8 +58,8 @@ export default function Home(props) {
                         <img src = {tool.img}/>
                         <h4>${tool.price}.00</h4>
                         <CardButtonDiv>
-                        <Cardbutton>Add to Cart</Cardbutton>
-                        <Cardbutton onClick={() => dispatch({type: "PUT_WISHLIST", payload: {type:tool.type, price: tool.price, img: tool.img}})}>Add to Wishlist</Cardbutton>  
+                        <Cardbutton onClick={() => dispatch({type: "ADD_TO_CART", payload: {name: tool.name, type:tool.type, price: tool.price, img: tool.img}})}>Add to Cart</Cardbutton>
+                        <Cardbutton onClick={() => dispatch({type: "PUT_WISHLIST", payload: {name: tool.name, type:tool.type, price: tool.price, img: tool.img}})}>Add to Wishlist</Cardbutton>  
                         </CardButtonDiv>
                     </Card>
                     )

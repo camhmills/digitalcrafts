@@ -7,12 +7,28 @@ flex-direction: column;
 align-items: start;
 text-align: center;
 height: auto;
-max-width: 200px;
-min-width: 180px;
 background-color: #38598b;
 @media screen and (max-width: 700px) {
     z-index: 2;
     position: absolute;
+}
+transition: left 0.5s ease 0s;
+animation-name: fadeInOut;
+min-width: 200px;
+max-width: 230px;
+animation-duration: 0.5s;
+animation-fill-mode: both;
+@keyframes fadeInOut {
+  from {
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    transform: translate(100, 510px);
+  }
+  to {
+    opacity: 1;
+  }
 }
 `
 

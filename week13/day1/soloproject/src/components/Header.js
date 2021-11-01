@@ -1,5 +1,6 @@
 import React from 'react'
 import { CartButton, HeaderDiv, HeaderTitle, SideBarButton } from '../styled-components/HeaderStyle'
+import { Link } from 'react-router-dom'
 
 export default function Header(props) {
     const viewsideBar = props.viewsideBar
@@ -8,7 +9,7 @@ export default function Header(props) {
         <HeaderDiv>
             <SideBarButton onClick = {() => setviewsideBar(!viewsideBar)}>Sidebar</SideBarButton>
             <HeaderTitle>Yarning Desire</HeaderTitle>
-            <CartButton>Cart</CartButton>
+            <CartButton><Link to="/cart" style={{textDecoration: "none", color: "black"}}>Cart</Link></CartButton>
         </HeaderDiv>
     )
 }

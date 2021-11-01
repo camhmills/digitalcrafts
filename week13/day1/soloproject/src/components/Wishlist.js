@@ -19,10 +19,11 @@ export default function Wishlist(props) {
                 return (
                     <Card>
                         <img src = {item.img}/>
+                        <p>{item.name}</p>
                         <h4>${item.price}.00</h4>
                         <CardButtonDiv>
                             <Cardbutton>Add to Cart</Cardbutton>
-                            <Cardbutton onClick={() => dispatch({})}>Remove from Wishlist</Cardbutton>  
+                            <Cardbutton onClick={() => dispatch({type:"REMOVE_FROM_WISHLIST", payload: item.name})}>Remove from Wishlist</Cardbutton>  
                         </CardButtonDiv>
                     </Card>
             )
