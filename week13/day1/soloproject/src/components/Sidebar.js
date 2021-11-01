@@ -1,5 +1,5 @@
 import React from 'react'
-import { SideBarDiv, SideBarA } from '../styled-components/SideBarStyle'
+import { SideBarDiv, SideBarLink } from '../styled-components/SideBarStyle'
 import { sideBarLinks } from './SidebarLinks'
 
 export default function Sidebar(props) {
@@ -9,7 +9,7 @@ export default function Sidebar(props) {
             { viewsideBar ? (
             <SideBarDiv>
             {sideBarLinks.map(link => (
-            <SideBarA href = {link.path}>{link.name}</SideBarA>
+                <SideBarLink to={link.path}>{link.name}</SideBarLink>
             ))}
             </SideBarDiv>
             ) : (

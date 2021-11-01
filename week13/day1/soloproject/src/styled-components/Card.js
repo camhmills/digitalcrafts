@@ -5,8 +5,8 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-text: center;
-height: 300px;
-width: 200px;
+height: 350px;
+width: 250px;
 background-color: white;
 `
 
@@ -26,5 +26,10 @@ transition: .25s;
 }
 &:active {
     transform: scale(.95)
+}
+@media screen and (max-width: 810px) {
+    &:active {
+        background-color: #5179b4;
+    }
 }
 `

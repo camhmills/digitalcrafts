@@ -13,11 +13,11 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 
 
 function App() {
-  const toolData = useSelector(state => state.HomeReducer)
+  const itemData = useSelector(state => state.HomeReducer)
   const wishList = useSelector(state => state.WishList)
   const [viewsideBar, setviewsideBar] = useState(true)
   
-  console.log(toolData)
+  console.log(itemData)
   return (
     <Router>
       <Switch>
@@ -29,7 +29,7 @@ function App() {
               <Dashboard/>
             </Route>
             <Route exact path = "/home">
-              <Home toolData = {toolData} />
+              <Home itemData = {itemData} />
             </Route>
             <Route exact path = "/wishlist">
               <Wishlist wishList = {wishList} />

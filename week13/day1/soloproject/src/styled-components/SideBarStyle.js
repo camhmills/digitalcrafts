@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
 export const SideBarDiv = styled.div`
 display: flex;
@@ -9,10 +10,13 @@ height: auto;
 max-width: 200px;
 min-width: 180px;
 background-color: #38598b;
-transition: 1s;
+@media screen and (max-width: 429px) {
+    z-index: 2;
+    position: absolute;
+}
 `
 
-export const SideBarA = styled.a`
+export const SideBarLink = styled(Link)`
 display: flex;
 justify-content: center;
 align-items: center;
@@ -23,5 +27,10 @@ color: #e7eaf6;
 transition: .75s;
 &:hover {
     background-color: #5179b4; 
+}
+@media screen and (max-width: 810px) {
+    &:active {
+        background-color: #5179b4;
+    }
 }
 `

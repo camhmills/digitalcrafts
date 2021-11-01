@@ -6,7 +6,7 @@ justify content: center;
 align-items: center;
 width: 100vw;
 height: 100px;
-background-color: #113f67
+background-color: #113f67;
 `
 
 export const SideBarButton = styled.button`
