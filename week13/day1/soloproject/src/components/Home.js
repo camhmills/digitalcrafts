@@ -7,7 +7,6 @@ import { useDispatch } from 'react-redux';
 
 export default function Home(props) {
     const { itemData } = props;
-    console.log(itemData);
     const dispatch = useDispatch();
     return (
         <HomeDiv>
@@ -38,6 +37,7 @@ export default function Home(props) {
                 return (
                     <Card>
                         <img src = {tool.img}/>
+                        <p>{tool.name}</p>
                         <h4>${tool.price}.00</h4>
                         <CardButtonDiv>
                         <Cardbutton onClick={() => dispatch({type: "ADD_TO_CART", payload: {name: tool.name, type:tool.type, price: tool.price, img: tool.img}})}>Add to Cart</Cardbutton>
@@ -56,6 +56,7 @@ export default function Home(props) {
                 return (
                     <Card>
                         <img src = {tool.img}/>
+                        <p>{tool.name}</p>
                         <h4>${tool.price}.00</h4>
                         <CardButtonDiv>
                         <Cardbutton onClick={() => dispatch({type: "ADD_TO_CART", payload: {name: tool.name, type:tool.type, price: tool.price, img: tool.img}})}>Add to Cart</Cardbutton>
@@ -63,7 +64,6 @@ export default function Home(props) {
                         </CardButtonDiv>
                     </Card>
                     )
-                
             })}
             </CardContainer>
         </HomeDiv>

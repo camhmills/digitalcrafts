@@ -1,7 +1,7 @@
 import { 
     REMOVE_FROM_WISHLIST,
     PUT_WISHLIST
-} from '../actions/wishlistActions'
+} from '../actiontypes/wishlistActions'
 
 const initialState = [];
 

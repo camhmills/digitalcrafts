@@ -22,7 +22,7 @@ export default function Wishlist(props) {
                         <p>{item.name}</p>
                         <h4>${item.price}.00</h4>
                         <CardButtonDiv>
-                            <Cardbutton>Add to Cart</Cardbutton>
+                            <Cardbutton onClick={() => dispatch({type:"ADD_TO_CART", payload: {name: item.name, type:item.type, price: item.price, img: item.img}})}>Add to Cart</Cardbutton>
                             <Cardbutton onClick={() => dispatch({type:"REMOVE_FROM_WISHLIST", payload: item.name})}>Remove from Wishlist</Cardbutton>  
                         </CardButtonDiv>
                     </Card>

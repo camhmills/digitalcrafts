@@ -13,6 +13,7 @@ margin-bottom: 10px;
     width: 275px;
     height: 450px;
     margin-bottom: 20px;
+    grid-column: 1/3;
 }
 `
 
