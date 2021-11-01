@@ -11,11 +11,11 @@ background-color: #38598b;
 @media screen and (max-width: 700px) {
     z-index: 2;
     position: absolute;
+    width: 100vw;
 }
 transition: left 0.5s ease 0s;
 animation-name: fadeInOut;
-min-width: 200px;
-max-width: 230px;
+width: 230px;
 animation-duration: 0.5s;
 animation-fill-mode: both;
 @keyframes fadeInOut {
@@ -27,7 +27,7 @@ animation-fill-mode: both;
     transform: translate(100, 510px);
   }
   to {
-    opacity: 1;
+    opacity: .95;
   }
 }
 `
