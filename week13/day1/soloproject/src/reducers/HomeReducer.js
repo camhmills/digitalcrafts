@@ -1,8 +1,9 @@
-import { toolData, yarnData } from "../data/toolData.js";
+import { accData, toolData, yarnData } from "../data/toolData.js";
 
 const initialState = [
     toolData,
-    yarnData
+    yarnData,
+    accData
 ];
 
 function HomeReducer(state = initialState, action) {

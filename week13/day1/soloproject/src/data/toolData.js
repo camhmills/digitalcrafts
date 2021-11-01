@@ -19,3 +19,14 @@ export const yarnData = [
     {type:"thread", price:10, img:"https://imgprd19.hobbylobby.com/a/ee/ff/aeeff61c89e486ff4fd87835efd1d8fbeb48b79c/350Wx350H-1988518-1020-px.jpg"},
     {type:"thread", price:10, img:"https://imgprd19.hobbylobby.com/c/66/97/c669726dfd26b775caa7167432f7ae9deac8ed9b/350Wx350H-399147-0519-px.jpg"},
 ]
+
+export const accData = [
+    {type:"accessory", price:10, img:"https://imgprd19.hobbylobby.com/sys-master/migrated/h8a/h93/h00/9090871001118/1171578_1[5].jpg"},
+    {type:"accessory", price:10, img:"https://imgprd19.hobbylobby.com/f/a7/ba/fa7ba2a2d8420c48f9b2d91b15ec09fc6b7faf3e/350Wx350H-1438258-013020.jpg"},
+    {type:"accessory", price:10, img:"https://imgprd19.hobbylobby.com/e/66/7f/e667f40ffc7161c7a7491dbd90dbd1d1383ed9ae/350Wx350H-1446590-012420.jpg"},
+    {type:"accessory", price:10, img:"https://imgprd19.hobbylobby.com/sys-master/migrated/hd0/hc4/h00/9465222856734/1454834-0517[5].jpg"},
+    {type:"accessory", price:10, img:"https://imgprd19.hobbylobby.com/8/1f/28/81f2832f6e9925f29827c1dc08a8a95405d91f55/350Wx350H-1600774-013020.jpg"},
+    {type:"accessory", price:10, img:"https://imgprd19.hobbylobby.com/5/17/6b/5176b512697662d4f5798b0d930c40655cf3c95f/350Wx350H-1610583-013020.jpg"},
+    {type:"accessory", price:10, img:"https://imgprd19.hobbylobby.com/f/7f/03/f7f03764f56e7ad9e1d81adbc92c2c7889a8c2fb/350Wx350H-1608801-020420.jpg"},
+    {type:"accessory", price:10, img:"https://imgprd19.hobbylobby.com/e/c0/d4/ec0d4176c028e58bf007d89dbe1d2fe01000ee61/350Wx350H-1620830-020420.jpg"},
+]

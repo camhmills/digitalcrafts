@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Sweater-Stitch';
+  src: local('Sweater-Stitch'), url(./data/XmasSweaterStitch-xXYq.ttf) format('truetype');
+}

@@ -8,6 +8,11 @@ align-text: center;
 height: 350px;
 width: 250px;
 background-color: white;
+@media screen and (max-width: 720px) {
+    width: 275px;
+    height: 375px;
+    margin-bottom: 20px;
+}
 `
 
 export const CardButtonDiv = styled.div`

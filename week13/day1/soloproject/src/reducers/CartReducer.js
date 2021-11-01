@@ -1,4 +1,4 @@
-const initialState = []
+const initialState = [];
 
 const CartData = (state = initialState, action) => {
     switch (action.type) {
@@ -8,3 +8,5 @@ const CartData = (state = initialState, action) => {
             return state;
     }
 }
+
+export default CartData;

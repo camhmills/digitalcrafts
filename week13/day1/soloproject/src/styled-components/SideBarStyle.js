@@ -10,7 +10,7 @@ height: auto;
 max-width: 200px;
 min-width: 180px;
 background-color: #38598b;
-@media screen and (max-width: 429px) {
+@media screen and (max-width: 700px) {
     z-index: 2;
     position: absolute;
 }
