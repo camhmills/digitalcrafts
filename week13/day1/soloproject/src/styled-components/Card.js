@@ -28,7 +28,7 @@ border: none;
 background-color: #e7eaf6;
 transition: .25s;
 height: 50px;
-width: 125px;
+width: 100%;
 border: 1px solid white;
 &:hover{
     background-color: #38598B;

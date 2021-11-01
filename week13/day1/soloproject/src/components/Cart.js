@@ -1,20 +1,20 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 
-import { CartDiv, CartTotal } from '../styled-components/CartStyle'
+import { CartDiv } from '../styled-components/CartStyle'
 import { Card, Cardbutton, CardButtonDiv } from '../styled-components/Card'
 import { CardContainer, TitleDiv } from '../styled-components/CardContainer';
 
 export default function Cart(props) {
     const dispatch = useDispatch()
     const {cartList} = props;
-    const totalDue = 0
+
     return (
         <CartDiv>
+            <CardContainer>
             <TitleDiv>
             <h2>Your Cart:</h2>
-            </TitleDiv>
-            <CardContainer>
+            </TitleDiv>    
             {cartList.map(item => {
                 return (
                     <Card>
@@ -28,8 +28,6 @@ export default function Cart(props) {
             )
         })}
             </CardContainer>
-            <CartTotal>{cartList.map(item => {return(totalDue+item.price)})}</CartTotal>
         </CartDiv>
-        
     )
 }

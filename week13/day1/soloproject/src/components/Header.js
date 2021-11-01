@@ -3,13 +3,18 @@ import { CartButton, HeaderDiv, HeaderTitle, SideBarButton } from '../styled-com
 import { Link } from 'react-router-dom'
 
 export default function Header(props) {
-    const viewsideBar = props.viewsideBar
-    const setviewsideBar = props.setviewsideBar
+    const {sum} = props;
+    const viewsideBar = props.viewsideBar;
+    const setviewsideBar = props.setviewsideBar;
     return (
         <HeaderDiv>
             <SideBarButton onClick = {() => setviewsideBar(!viewsideBar)}>Sidebar</SideBarButton>
             <HeaderTitle>Yarning Desire</HeaderTitle>
-            <CartButton><Link to="/cart" style={{textDecoration: "none", color: "black"}}>Cart</Link></CartButton>
+                <CartButton>
+                    <Link to="/cart" style={{textDecoration: "none", color: "black"}}>
+                        Cart ${sum}.00
+                    </Link>
+                </CartButton>
         </HeaderDiv>
     )
 }
