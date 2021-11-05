@@ -13,7 +13,7 @@ background-color: #38598b;
     position: absolute;
     width: 100vw;
 }
-transition: left 0.5s ease 0s;
+transition: left .5s ease 0s;
 animation-name: fadeInOut;
 width: 230px;
 animation-duration: 0.5s;
